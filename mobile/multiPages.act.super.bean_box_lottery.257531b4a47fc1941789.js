@@ -2619,7 +2619,7 @@
               isDebug: o,
               DEBUG_IP: a,
               isForeign: 1,
-              reportUrl: "https://statwup.nimo.tv",
+              reportUrl: "",
               device: null == d ? void 0 : d.name,
               osver: null == d ? void 0 : d.version,
               domain: ".nimo.tv",
@@ -7210,7 +7210,7 @@
           getGuid: function () {
             return Object(l.a)().guid;
           },
-          host: "https://metric.nimo.tv",
+          host: "",
           isDebug: "false",
           isMobile:
             "mobile" ===
@@ -11451,7 +11451,7 @@
                     r.setServant(t), r.setFunc(e), r.writeStruct("tReq", n);
                     var i = r.encode().getBuffer(),
                       o = new Date().getTime(),
-                      a = c.config.reportUrl || "https://statwup.huya.com";
+                      a = c.config.reportUrl || "";
                     u.Util.ajax(
                       a + "?timestamp=" + o,
                       i,
