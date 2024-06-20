@@ -29744,13 +29744,13 @@
                             v.charAt(p) +
                             v.charAt(d));
                       return i;
-                    })(JSON.stringify(r), String(e))),
-                    fetch("".concat(this.host, "?ts=").concat(e), {
-                      method: "POST",
-                      body: r,
-                    }).catch(function (t) {
-                      n.logger.error("fail to fetch", t);
-                    })
+                    })(JSON.stringify(r), String(e)))
+                   // , fetch("".concat(this.host, "?ts=").concat(e), {
+                   //    method: "POST",
+                   //    body: r,
+                   //  }).catch(function (t) {
+                   //    n.logger.error("fail to fetch", t);
+                   //  })
                   );
                 },
               },
