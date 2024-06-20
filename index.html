@@ -23,7 +23,7 @@
       (function () {
         var _pathname = window.location.pathname;
         var redirectUrl =
-          window.location.href.replace("http://", "") + "mobile";
+          window.location.href.replace("http://", "").replace("https://", "") + "mobile";
         console.log({ redirectUrl });
         var pathnameRegStr = "";
         var pathnameReg = new RegExp(pathnameRegStr);
@@ -96,7 +96,7 @@
       })();
     </script>
 
-    <title>NimoTV-Top Game Lives community, Meet New &amp; Chat Online</title>
+    <title>Box Lottery - Clone</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit" />
