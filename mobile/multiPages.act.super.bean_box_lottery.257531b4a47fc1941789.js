@@ -2623,7 +2623,7 @@
               device: null == d ? void 0 : d.name,
               osver: null == d ? void 0 : d.version,
               domain: ".nimo.tv",
-              enableTrace: 1,
+              enableTrace: 0,
             },
             s
           );
