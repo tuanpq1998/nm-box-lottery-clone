@@ -21835,10 +21835,11 @@
                         ),
                           j.a.isInNimoApp
                             ? Object(Me.F)()
-                            : window.open(
-                                "//".concat(A.a.maindomain, "/popout/recharge"),
-                                "_blank"
-                              );
+                            : null;
+				// window.open(
+    //                             "//".concat(A.a.maindomain, "/popout/recharge"),
+    //                             "_blank"
+    //                           );
                       else if (i === Ie.a.kMRC_OVERFREQUENCY || -7 === i) {
                         var d;
                         V.a.error(
