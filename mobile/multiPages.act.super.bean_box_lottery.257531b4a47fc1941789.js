@@ -2623,7 +2623,7 @@
               device: null == d ? void 0 : d.name,
               osver: null == d ? void 0 : d.version,
               domain: ".nimo.tv",
-              enableTrace: 1,
+              enableTrace: 0,
             },
             s
           );
@@ -11452,14 +11452,14 @@
                     var i = r.encode().getBuffer(),
                       o = new Date().getTime(),
                       a = c.config.reportUrl || "";
-                    u.Util.ajax(
-                      a + "?timestamp=" + o,
-                      i,
-                      function () {},
-                      function (t) {
-                        N.log("上报失败", t);
-                      }
-                    );
+                    // u.Util.ajax(
+                    //   a + "?timestamp=" + o,
+                    //   i,
+                    //   function () {},
+                    //   function (t) {
+                    //     N.log("上报失败", t);
+                    //   }
+                    // );
                   },
                 },
                 {
@@ -29744,13 +29744,13 @@
                             v.charAt(p) +
                             v.charAt(d));
                       return i;
-                    })(JSON.stringify(r), String(e))),
-                    fetch("".concat(this.host, "?ts=").concat(e), {
-                      method: "POST",
-                      body: r,
-                    }).catch(function (t) {
-                      n.logger.error("fail to fetch", t);
-                    })
+                    })(JSON.stringify(r), String(e)))
+                   // , fetch("".concat(this.host, "?ts=").concat(e), {
+                   //    method: "POST",
+                   //    body: r,
+                   //  }).catch(function (t) {
+                   //    n.logger.error("fail to fetch", t);
+                   //  })
                   );
                 },
               },

@@ -4154,7 +4154,7 @@
               device: null == p ? void 0 : p.name,
               osver: null == p ? void 0 : p.version,
               domain: ".nimo.tv",
-              enableTrace: 1,
+              enableTrace: 0,
             },
             s
           );
@@ -26149,15 +26149,15 @@
                     r.setServant(t), r.setFunc(e), r.writeStruct("tReq", n);
                     var i = r.encode().getBuffer(),
                       o = new Date().getTime(),
-                      a = c.config.reportUrl || "https://statwup.huya.com";
-                    u.Util.ajax(
-                      a + "?timestamp=" + o,
-                      i,
-                      function () {},
-                      function (t) {
-                        N.log("上报失败", t);
-                      }
-                    );
+                      a = c.config.reportUrl || "";
+                    // u.Util.ajax(
+                    //   a + "?timestamp=" + o,
+                    //   i,
+                    //   function () {},
+                    //   function (t) {
+                    //     N.log("上报失败", t);
+                    //   }
+                    // );
                   },
                 },
                 {
@@ -51950,13 +51950,13 @@
                             v.charAt(d) +
                             v.charAt(p));
                       return i;
-                    })(JSON.stringify(r), String(e))),
-                    fetch("".concat(this.host, "?ts=").concat(e), {
-                      method: "POST",
-                      body: r,
-                    }).catch(function (t) {
-                      n.logger.error("fail to fetch", t);
-                    })
+                    })(JSON.stringify(r), String(e)))
+                    // ,fetch("".concat(this.host, "?ts=").concat(e), {
+                    //   method: "POST",
+                    //   body: r,
+                    // }).catch(function (t) {
+                    //   n.logger.error("fail to fetch", t);
+                    // })
                   );
                 },
               },
