@@ -4154,7 +4154,7 @@
               device: null == p ? void 0 : p.name,
               osver: null == p ? void 0 : p.version,
               domain: ".nimo.tv",
-              enableTrace: 1,
+              enableTrace: 0,
             },
             s
           );
@@ -26149,7 +26149,7 @@
                     r.setServant(t), r.setFunc(e), r.writeStruct("tReq", n);
                     var i = r.encode().getBuffer(),
                       o = new Date().getTime(),
-                      a = c.config.reportUrl || "https://statwup.huya.com";
+                      a = c.config.reportUrl || "";
                     u.Util.ajax(
                       a + "?timestamp=" + o,
                       i,
