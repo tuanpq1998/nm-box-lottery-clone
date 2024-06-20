@@ -26150,14 +26150,14 @@
                     var i = r.encode().getBuffer(),
                       o = new Date().getTime(),
                       a = c.config.reportUrl || "";
-                    u.Util.ajax(
-                      a + "?timestamp=" + o,
-                      i,
-                      function () {},
-                      function (t) {
-                        N.log("上报失败", t);
-                      }
-                    );
+                    // u.Util.ajax(
+                    //   a + "?timestamp=" + o,
+                    //   i,
+                    //   function () {},
+                    //   function (t) {
+                    //     N.log("上报失败", t);
+                    //   }
+                    // );
                   },
                 },
                 {
@@ -51950,13 +51950,13 @@
                             v.charAt(d) +
                             v.charAt(p));
                       return i;
-                    })(JSON.stringify(r), String(e))),
-                    fetch("".concat(this.host, "?ts=").concat(e), {
-                      method: "POST",
-                      body: r,
-                    }).catch(function (t) {
-                      n.logger.error("fail to fetch", t);
-                    })
+                    })(JSON.stringify(r), String(e)))
+                    // ,fetch("".concat(this.host, "?ts=").concat(e), {
+                    //   method: "POST",
+                    //   body: r,
+                    // }).catch(function (t) {
+                    //   n.logger.error("fail to fetch", t);
+                    // })
                   );
                 },
               },
