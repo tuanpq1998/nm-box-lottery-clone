@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta charset="utf-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <meta name="renderer" content="webkit" />
+    <link
+      rel="apple-touch-icon"
+      href="//m.nimo.tv/nms/images/apple-touch-icon.67a0300e238e3718b383b6b3b46fb3b8.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="//m.nimo.tv/nms/images/favicon-32x32.4c79d7892d1f5a3bf7430e2e2f4bec35.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="//m.nimo.tv/nms/images/favicon-16x16.702cde8557235a09d89ceaea02b6e97d.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="//m.nimo.tv/nms/c359fae6d149bed82c55cb67883bad9c.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#00a300" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="google" content="notranslate" />
+    <meta property="fb:app_id" content="161285164570410" />
+    <script>
+      var nimo_base = {};
+      nimo_base.hasMulTheme = "";
+      nimo_base.defaultTheme = 1;
+      nimo_base.pathKeyword = "";
+    </script>
+
+    <title>NimoTV-Top Game Lives community, Meet New &amp; Chat Online</title>
+
+    <meta
+      name="description"
+      content="Nimo TV is the best social live streaming community for watching  Liveshow, game Live or have a free chat. Participate in real-time interactions or video chat online"
+    />
+
+    <link rel="dns-prefetch" href="https://tx.flv.nimo.tv" />
+    <link rel="dns-prefetch" href="https://ws.flv.nimo.tv" />
+    <link rel="dns-prefetch" href="https://al.flv.nimo.tv" />
+    <link rel="dns-prefetch" href="https://tx.hls.nimo.tv" />
+    <link rel="dns-prefetch" href="https://ws.hls.nimo.tv" />
+    <link rel="dns-prefetch" href="https://al.hls.nimo.tv" />
+    <link rel="dns-prefetch" href="https://tx-slice.nimo.tv" />
+    <link rel="dns-prefetch" href="https://ws-slice.nimo.tv" />
+    <link rel="dns-prefetch" href="https://al-slice.nimo.tv" />
+    <link rel="dns-prefetch" href="https://sail-api-static.nimo.tv" />
+    <link rel="dns-prefetch" href="https://sail-api.nimo.tv" />
+    <link rel="dns-prefetch" href="https://follow.nimo.tv" />
+    <link rel="dns-prefetch" href="https://api.nimo.tv" />
+    <link rel="dns-prefetch" href="https://api-cf.nimo.tv" />
+    <link rel="dns-prefetch" href="https://guess.nimo.tv" />
+    <link rel="dns-prefetch" href="https://img.nimo.tv" />
+    <link rel="dns-prefetch" href="https://wspic.vod.nimo.tv" />
+    <link rel="dns-prefetch" href="https://txpic.vod.nimo.tv" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://stats.g.doubleclick.net" />
+    <link rel="dns-prefetch" href="https://www.gstatic.com" />
+    <link rel="dns-prefetch" href="https://metric.nimo.tv" />
+    <link rel="dns-prefetch" href="https://ylog.nimo.tv" />
+    <link rel="dns-prefetch" href="https://follow-cf-dynamic.nimo.tv" />
+
+    <script>
+      window.__NIMO_APP_DATA__ = {
+        country: "VN",
+        platform: "mobile",
+        lang: "1033",
+        theme: "1",
+        version: "multiPages.act.super.bean_box_lottery.c9564827bf",
+      };
+    </script>
+
+    <script src="//m.nimo.tv/nms/lib/browser-ua.48ab228c9cd8d25109c2.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        var redirectUrl = "";
+
+        function getNewSearch() {
+          try {
+            var hadRedirected = false;
+            var search = window.location.search || "";
+            search = search.substring(1);
+            var queryArr = search.split("&");
+            for (var i = 0; i < queryArr.length; i++) {
+              if (queryArr[i].split("=")[0] === "origin") {
+                queryArr[i] = "origin=wap";
+                hadRedirected = true;
+              }
+            }
+            search = queryArr.join("&");
+            if (search) {
+              search = "?" + search;
+              if (!hadRedirected) {
+                search = search + "&origin=wap";
+              }
+            } else {
+              if (!hadRedirected) {
+                search = "?origin=wap";
+              }
+            }
+            return search;
+          } catch (error) {
+            console.error(error);
+            return "";
+          }
+        }
+        var getThirdPartyHost = function (e) {
+          var res = /^https?:\/\/([^:/?#]+)/.exec(e);
+          var host = res ? res[1] : "";
+          if (!/\bnimo\.tv$/.test(host) && host) {
+            return host;
+          }
+          return "";
+        };
+        var writeReferer = function () {
+          try {
+            var e = document.referrer;
+            if (e && getThirdPartyHost(e)) {
+              document.cookie = "_nm_referrer=".concat(
+                encodeURIComponent(e),
+                ";domain=.nimo.tv; path=/"
+              );
+            }
+            if (!e) {
+              document.cookie =
+                "_nm_referrer=; domain=.nimo.tv; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            }
+          } catch (e) {}
+        };
+
+        function shouldRedirect() {
+          var search = window.location.search || "";
+          search = search.substring(1);
+          var queryArr = search.split("&");
+          var isOnlyWap = false;
+          for (var i = 0; i < queryArr.length; i++) {
+            if (queryArr[i].split("=")[0] === "curl") {
+              isOnlyWap = true;
+              return isOnlyWap;
+            }
+          }
+          return isOnlyWap;
+        }
+
+        var onlyWap =
+          shouldRedirect() || /Tencent AppMarket/.test(navigator.userAgent);
+        if (!onlyWap && !__NIMO_UA__.isWap) {
+          writeReferer();
+          var newSearch = getNewSearch();
+          if (redirectUrl !== "") {
+            window.location.href = "//" + redirectUrl + newSearch;
+          } else {
+            window.location.href =
+              "//www.nimo.tv" + location.pathname + newSearch;
+          }
+        }
+      })();
+    </script>
+
+    <script>
+      !(function () {
+        window.__HBI__ = {
+          ext: {
+            country_flg: "VN",
+            cdn: "aws",
+            page_type: "m-bean_box_lottery",
+            load_diff: window.__NM_DIFF__,
+            slug:
+              location.host.replace(/.nimo.tv$/, "") +
+              "/" +
+              location.pathname
+                .replace(/\d+/g, ":id")
+                .replace(/^\/|\/$/g, "")
+                .replace(/\//g, "-"),
+            abtest: "",
+            temp: "",
+          },
+          id: 27,
+          rpurl: "https://metric.nimo.tv",
+          tti: false,
+          fid: true,
+          lcp: true,
+          cls: true,
+          memory: true,
+          log: false,
+          getUA: function () {
+            return window.__NIMO_UA__ && __NIMO_UA__;
+          },
+        };
+      })();
+    </script>
+    <script>
+      "use strict";
+      !(function () {
+        var e;
+        switch (!0) {
+          case window._native_call_ &&
+            "function" == typeof window._native_call_.statisticsWebTiming:
+            e = 1;
+            break;
+          case window.webkit &&
+            window.webkit.messageHandlers &&
+            window.webkit.messageHandlers.statisticsWebTiming &&
+            "function" ==
+              typeof window.webkit.messageHandlers.statisticsWebTiming
+                .postMessage:
+            e = 2;
+        }
+        if (e) {
+          var t = location.href,
+            i = function () {
+              setTimeout(function () {
+                if (performance.timing) {
+                  var i = performance.timing,
+                    n = i.navigationStart,
+                    a = {
+                      domContentLoadedEventEnd: i.domContentLoadedEventEnd,
+                      loadEventEnd: i.loadEventEnd,
+                      navigationStart: n,
+                      page_type: "m-bean_box_lottery",
+                      url: t,
+                      slug: window.__HBI__.ext.slug,
+                    };
+                  1 === e
+                    ? window._native_call_.statisticsWebTiming(
+                        JSON.stringify(a)
+                      )
+                    : 2 === e &&
+                      window.webkit.messageHandlers.statisticsWebTiming.postMessage(
+                        a
+                      );
+                }
+              }, 0);
+            };
+          "complete" === document.readyState
+            ? i()
+            : window.addEventListener("load", function () {
+                i();
+              });
+        }
+      })();
+    </script>
+
+    <style>
+      .nm-logo {
+        background: url("data:image/png;base64,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")
+          no-repeat center/contain;
+      }
+      .nimo-theme-dark .nm-logo {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAABACAMAAAAXtNroAAAApVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+4/eNVAAAANnRSTlMAmu6xuIE/RfvlI97FCEzqVBxQN8oCE/j0DcChKI3Y0m8E4bWsaWK9p1zOLReUiHvwdUk8VzMa5A6zAAAGW0lEQVRo3uWb2XaqMBRAjzNaKdIyKqNFxHlqz/9/2r0l0UjILZIXF737qXYxbZOcIaXwOCM/dKZ9+H+4JAr+xdnA/0G8MpAyhv8B6zDEGw78fjYtG+8Ywm/ndYlFlvCrcRcB8uzgF6P7bWTMTz38JoLfitlPFGSMJyYQ5U/4VXif0b41m2VJMtWQoWRf8JeMhK9sNpvtDulAhcbj+QGK0PY65KyxgNNJY2gy+kxBEWGqAsVBnpcVyDGaBeNDDE8ltVHExwBu6ChgupVK9U4eH0x4HvEOBRx3XmFkUMT8C+ozxpwFPI8ZMhTbOba1YNl65eNTL5gPNa19dGwFGU59Z5Wen8HTOFxtO6nnwiPE+mX/ch3nbW1luopm8CwGSEg8qIOZarK9VRdzVvAkzIAMcQR10Q3JRx8NnzuvF5iTQn3cNZnaKtTE6nWzFTwNsiZ9kEFv02FuFBtSYrkgxSk/uwONgjQLB5BDPeaJqln1NomeHkjAeo13/pvYz7WZBRyroJ2Qen2btV8iIHwuwxaf56xduORaNj3qhJoyXCcpf13zZLwIGUcm/wTGdAEQst0d+eA3EdU2gSVIhuv8IQ3WeZ/y+4+KEX3Oz7z+GG8onQ03TwUIM/8b/uUEeQAyoIQp3uk8cYv+VbRvYGGOoQpqvM0tfoT5oaQsCVxguCFRs4Cy/cACSuv+8Dn+m37h6fMj54DfdPnss9Oc7gZ4PKO0EfSen9+DAv1rV2LCHWQXbXD7ntr3dVCXHWpeBc/XewyRJ7ybFgEKKQfWT/y3sjnN2wodikQ2l82qlLEFd0xFym/lQ3dImdAFYWMZzWMLFP+NMip1My2h8kC0s6fmgS5z6yhj72FlTCyyKBIsKnttvGJrCuvVLfa4rU7OkhxEPnRt3uELczyhciTavz3Tfq+WMi4eVsa2/3Z584kgU1aD61xe6ACmdyJLlz0z394OC4H16HKxpAtC5bNolLfa92Otaiorb1XKPJzyiQ7wwgSCeo3Qrz8rq1oxsm5tcv+yMksizojLjF0ybLWU0b4AZSmjbJFRd96B8amQKG+KlYvJ68UsfAxBrAzW7KiMv4Bn4SDOaipj25NWZk3Pm6jB7/+svLXvT43JoKdMmcdU6fSY+AuXXTTreHWVca5XTuz1Hu/x1zflrqiIjwNu4QmVoUW25+7juqZyymXc8fdFUhMYDyuv+zYNPG6V8gekDl5xUuhclV0yhy9QJCVztkJ5gzmbuy3pHlQq+0ifXkJ5DBOaU6ZqxcT+ANi2jkS4pQNT9sjYmCAq7xTzZ2XosqrzQgLLtlp5jJSOJ6EMERISs2qU/6Keo310VgHulAf0SjxkYeoVygPiaQFAQsuQamWDZRvfqq8M1zW6qxplRkF5IljKrMjcVChDeO2MdYWdUKnMaEdxbWXIkHCSUWZX4iGpa1ulnJLfxLCnmjWUCZ24tnK8RMJKRplatPn76lVruViOrFTyFZ3rK2NUU5l1gqi8GhLK6rVkElXEAVQp0/pjfaDHSyh36iuDPkeKhDL9aQoFVHLJfbWyZSMjlVH2JZRJKySrnNKnFaXO92plaOENTZVQbm9klKFvyyu7Gl0W5UbPgAeUPbzRg/rK4RdIKcNEkVRmRbbSU4FgXQeuX6HMyhFahtRW1hYmSCpDJK9srpEw7L1bptX3j0jI4CHlAdv6q6ls+y6AtDL40sqgD1HE2n1MGUIkbB5UTpCQjGRq7DsyaWX4ouMqbM+qlVO2xVOpzCKPcQGCvHI8RcJFpNwRKLMm2QsqX9jglcvlyBluOCzvCZ2nznoFPLzdSVQczQDKm9OOewujRq4jzLD74lR0uXd3nH0MAlxFGMgPfNnyQjpPWVbsT4/cNFa4tKnndzqxUZzclo6mA5T32RJgeInNhFv6T8vwBByWxt7QY4274oIke2FBGPfGnQtwWL7RpXdWD+POmR66yPyygu5ni7g4hJNWNxyuP3akvRTiZo7WgxJf3fWiXJ58giQBbVybxCstYiVgWz7QKFSHbgpLYdAevFmQma3p8itZGUGz0MkwhxLOUVPfSu/RGvoM9bBmmHO0oGmoBhKWLP5XMzq0kTCB5rGdI8UZJ61HmHXz5NTI2EXw5iiND83EmqIcdsPecrsjPhxRgmmj/wPS2mtYk/EAGo558ZdhGx9BmRtJuoVm8gdWp9DbyVMtvQAAAABJRU5ErkJggg==")
+          no-repeat center/contain;
+      }
+    </style>
+    <link
+      href="//m.nimo.tv/nms/multiPages.act.super.bean_box_lottery.3215409f85b0035e4111.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class=" ">
+    <div id="container"></div>
+    <script>
+      function q(variable) {
+        var query = location.search.substring(1);
+        var vars = query.split("&");
+        var val = "";
+        for (var i = 0; i < vars.length; i++) {
+          var parts = vars[i].split("="),
+            k = parts[0],
+            v = parts[1];
+          if (k === variable) {
+            val = v;
+          }
+        }
+        return val;
+      }
+
+      window.NIMO_REP = q("_rep");
+      var GA_TRACK_ID;
+      var GLOBAL_REPORT_PRO = window.NIMO_REP;
+
+      var type = "";
+      var mapTypeToReportConfig = {
+        activity: {
+          GA_TRACK_ID: "G-R88F84SHW9",
+          GLOBAL_REPORT_PRO: "nimo_activity",
+        },
+      };
+
+      var config = mapTypeToReportConfig[type];
+      if (config) {
+        GA_TRACK_ID = config.GA_TRACK_ID;
+        GLOBAL_REPORT_PRO = GLOBAL_REPORT_PRO || config.GLOBAL_REPORT_PRO;
+        window.G_REPORT_TYPE = type;
+      }
+
+      var isNimoApp = /^.*(nimo).*$/.test(navigator.userAgent);
+      var isWap = __NIMO_UA__.isWap;
+      if (!GA_TRACK_ID) {
+        GA_TRACK_ID = isNimoApp ? "G-R88F84SHW9" : "G-Q9F868YX7R";
+      }
+      if (!GLOBAL_REPORT_PRO) {
+        GLOBAL_REPORT_PRO = isNimoApp
+          ? "nimo_activity"
+          : isWap
+          ? "nimo_wap"
+          : "nimo_web";
+      }
+      window.NIMO_INIT_YA_PRO = GLOBAL_REPORT_PRO;
+      var YA_NIMO_URL = "/nms/lib/nimo-ya-0.0.4.js";
+      var headerDom = document.getElementsByTagName("head")[0];
+
+      var gaScript = document.createElement("script");
+      gaScript.type = "text/javascript";
+      gaScript.async = true;
+      gaScript.src =
+        "https://www.googletagmanager.com/gtag/js?id=" + GA_TRACK_ID;
+      headerDom.appendChild(gaScript);
+
+      window.dataLayer = window.dataLayer || [];
+      (function () {
+        var t = function () {};
+        window.dataLayer.push = function (a) {
+          if (a.event === "gtm.linkClick") {
+            a.eventCallback = t;
+          }
+          if (a["gtm.element"]) {
+            a["gtm.element"] = a["gtm.element"].cloneNode(true);
+          }
+          return Array.prototype.push.apply(this, arguments);
+        };
+      })();
+      function gtag() {
+        if (window.dataLayer) {
+          window.dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", GA_TRACK_ID);
+
+      var yaScript = document.createElement("script");
+      yaScript.id = "yaScript";
+      yaScript.setAttribute("pageviewext", "countryid=VN");
+      yaScript.setAttribute("noreport", "");
+      yaScript.setAttribute("pro", GLOBAL_REPORT_PRO);
+      var mergeReport = "";
+      if (mergeReport) {
+        yaScript.setAttribute("merge", mergeReport);
+      }
+      yaScript.src = YA_NIMO_URL;
+      headerDom.appendChild(yaScript);
+    </script>
+
+    <script>
+      /* eslint-disable */ (function () {
+        var parseURL = function parseURL(url) {
+          var _url$match;
+          var that = parseURL;
+          var _url = url || location.href;
+          var diss, host, query, pathname, dirname, relative, path, obj;
+          diss = _url.match(
+            /^(?:(\w+):\/{2,3})?(?:(\w+):?(\w+)?@)?([^:\/\?#]+)(?::(\d+))?(\/[^\?#]+)?(?:\?([^#]+))?(?:#(\w+))?/
+          );
+          host = diss[4];
+          query = _url.match(/((\?))((?!#).)*/g);
+          query = query ? query[0] : "";
+          pathname = diss[6] || "";
+          dirname =
+            (_url$match = _url.match(/[^?#]*\//)) === null ||
+            _url$match === void 0
+              ? void 0
+              : _url$match[0];
+          relative = (_url.match(/tps?:\/\/[^\/]+(.+)/) || [, ""])[1];
+          path = relative.match(/([^?#]*\/)?/)[0];
+          obj = {
+            href: _url,
+            protocol: diss[1],
+            username: diss[2],
+            password: diss[3],
+            host: host,
+            port: diss[5],
+            query: query,
+            params: (function () {
+              var rst = {},
+                seg = query.replace(/^\?/, "").split("&"),
+                len = seg.length,
+                i = 0,
+                s;
+              for (; i < len; i++) {
+                if (!seg[i]) {
+                  continue;
+                }
+                s = seg[i].split("=");
+                rst[s[0]] = s[1];
+              }
+              return rst;
+            })(),
+            file: (pathname.match(/\/([^\/?#]+)$/i) || [, ""])[1],
+            hash: diss[8] ? diss[8].replace("#", "") : "",
+            dirname: dirname,
+            path: path,
+            pathname: pathname,
+            relative: relative,
+            segments: path.replace(/^\/|\/$/g, "").split("/"),
+          };
+          return obj;
+        };
+        var setAdvertisementType = function setAdvertisementType() {
+          var _curUrlObj$params, _curUrlObj$params2, _curUrlObj$params3;
+          var curUrlObj = parseURL(document.URL);
+          var fromParams =
+            curUrlObj === null || curUrlObj === void 0
+              ? void 0
+              : (_curUrlObj$params = curUrlObj.params) === null ||
+                _curUrlObj$params === void 0
+              ? void 0
+              : _curUrlObj$params._setting;
+          if (fromParams && (fromParams === "fbad" || fromParams === "ggad")) {
+            var cookieValue = "ss_source_ad_type=".concat(
+              encodeURI(fromParams),
+              ";domain=.nimo.tv;path=/"
+            );
+            document.cookie = cookieValue;
+          }
+          var commonShareWhiteList = [
+            "pickme",
+            "clip",
+            "others",
+            "selfpromotion",
+            "default",
+            "liveshow_default",
+            "h5activity",
+            "promotioncampaign",
+            "referal",
+            "competition",
+            "autoshare",
+            "restream",
+            "referal_fans_202012",
+            "sharecombo",
+            "other",
+            "editstreaminfo",
+            "createclip",
+            "esport",
+            "schedule_poster",
+            "replay",
+            "referal_superstar",
+            "fantask",
+            "invitation_newusers",
+            "match_share_boost",
+            "post_button",
+          ];
+          var af_sub1 =
+            curUrlObj === null || curUrlObj === void 0
+              ? void 0
+              : (_curUrlObj$params2 = curUrlObj.params) === null ||
+                _curUrlObj$params2 === void 0
+              ? void 0
+              : _curUrlObj$params2.af_sub1;
+          var _from =
+            curUrlObj === null || curUrlObj === void 0
+              ? void 0
+              : (_curUrlObj$params3 = curUrlObj.params) === null ||
+                _curUrlObj$params3 === void 0
+              ? void 0
+              : _curUrlObj$params3._from;
+          if (_from === "facebook_traffic") {
+            try {
+              var _window, _window$sessionStorag;
+              (_window = window) === null || _window === void 0
+                ? void 0
+                : (_window$sessionStorag = _window.sessionStorage) === null ||
+                  _window$sessionStorag === void 0
+                ? void 0
+                : _window$sessionStorag.setItem("facebook_traffic", "1");
+            } catch (e) {
+              console.log(e);
+            }
+          } else if (
+            commonShareWhiteList.indexOf(_from) > -1 ||
+            commonShareWhiteList.indexOf(af_sub1) > -1
+          ) {
+            try {
+              window.sessionStorage.setItem(
+                "nm-common-share",
+                JSON.stringify(curUrlObj.params)
+              );
+            } catch (e) {}
+          }
+        };
+        setAdvertisementType();
+      })();
+    </script>
+
+    <script
+      src="/nms/lib/sentry-tracing-6.14.3.js"
+      async
+      id="nimo-sentry-script"
+    ></script>
+    <script>
+      // config: https://docs.sentry.io/clients/javascript/config/
+      document.getElementById("nimo-sentry-script").addEventListener(
+        "load",
+        function () {
+          var options = {
+            dsn: "https://741f4a8efcf94c0bae4b6dcc1891959a@fems.huya.com/179",
+            ignoreErrors: [
+              "Non-Error promise rejection captured",
+              "network error",
+            ],
+            // denyUrls: [
+            //   // Chrome extensions
+            //   /extensions\//i,
+            //   /^chrome:\/\//i,
+            //   /^chrome-extension:\/\//i,
+            // ],
+            allowUrls: [
+              /https?:\/\/((m|dashboard|www|www-test|m-test|dashboard-test)\.)?nimo\.tv/,
+              /https?:\/\/(www\.)?gstatic\.com/,
+              /https?:\/\/(www\.)?googletagmanager\.com/,
+              /^webpack-internal:\/\//,
+            ],
+            rpurl: "https://ylog.nimo.tv/d.gif",
+            integrations: [
+              new Sentry.Integrations.BrowserTracing({
+                notTracingRemote: true,
+              }),
+            ],
+            tracesSampleRate: 0.01,
+            beforeSend: function (event, hint) {
+              if (true) {
+                var error = hint && hint.originalException;
+                if (
+                  error &&
+                  (error.name === "ChunkLoadError" || error.name === "NetError")
+                ) {
+                  return null;
+                }
+                if (
+                  window &&
+                  window.navigator &&
+                  /Zalo|HeadlessChrome/.test(window.navigator.userAgent)
+                ) {
+                  return null;
+                }
+                try {
+                  var stacktrace = event.exception.values[0].stacktrace;
+                  if (!stacktrace) {
+                    return null;
+                  }
+                  var frame = stacktrace.frames[0];
+                  if (!frame.filename || frame.filename === `<anonymous>`) {
+                    return null;
+                  }
+                } catch (e) {}
+              }
+              return event;
+            },
+          };
+          if (
+            "multiPages.act.super.bean_box_lottery.c9564827bf" !== "undefined"
+          ) {
+            options.release =
+              "multiPages.act.super.bean_box_lottery.c9564827bf";
+          }
+          Sentry.init(options);
+          Sentry.setTag("entry", "multiPages.act.super.bean_box_lottery");
+        },
+        false
+      );
+    </script>
+
+    <script src="//m.nimo.tv/nms/dll.5f5055e40f3894900180.js"></script>
+    <!-- <script src="//m.nimo.tv/nms/runtime.multiPages.act.super.bean_box_lottery.2c934ce9443214e090af.js"></script> -->
+    <script src="runtime.multiPages.act.super.bean_box_lottery.2c934ce9443214e090af.js"></script>
+    <script src="//m.nimo.tv/nms/react-dom.b764c573cf3b7ee73b17.js"></script>
+    <script src="//m.nimo.tv/nms/init.e23350d6749f2645776c.js"></script>
+    <!-- <script src="//m.nimo.tv/nms/multiPages.act.super.bean_box_lottery.257531b4a47fc1941789.js"></script> -->
+    <script src="multiPages.act.super.bean_box_lottery.257531b4a47fc1941789.js"></script>
+  </body>
+</html>
