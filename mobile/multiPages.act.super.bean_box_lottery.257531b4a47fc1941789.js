@@ -11452,14 +11452,14 @@
                     var i = r.encode().getBuffer(),
                       o = new Date().getTime(),
                       a = c.config.reportUrl || "";
-                    u.Util.ajax(
-                      a + "?timestamp=" + o,
-                      i,
-                      function () {},
-                      function (t) {
-                        N.log("上报失败", t);
-                      }
-                    );
+                    // u.Util.ajax(
+                    //   a + "?timestamp=" + o,
+                    //   i,
+                    //   function () {},
+                    //   function (t) {
+                    //     N.log("上报失败", t);
+                    //   }
+                    // );
                   },
                 },
                 {
