@@ -171,8 +171,7 @@
           if (redirectUrl !== "") {
             window.location.href = "//" + redirectUrl + newSearch;
           } else {
-            window.location.href =
-              "//www.nimo.tv" + location.pathname + newSearch;
+            window.location.href = window.location.href + "/../";
           }
         }
       })();
