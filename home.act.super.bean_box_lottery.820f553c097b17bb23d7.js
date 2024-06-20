@@ -19330,6 +19330,7 @@
               {
                 key: "handleClickSudokuBox",
                 value: function (t) {
+                  console.log("handleClickSudokuBox", +new Date());
                   var e = this.props,
                     n = (e.isLogin = true),
                     r = e.onClickSudokuBox,
@@ -19673,12 +19674,11 @@
                             ? void 0
                             : i.balanceNotEnough
                         ),
-                          B.a.isInNimoApp
-                            ? Object(Ne.z)()
-                            : window.open(
-                                "//".concat(U.a.maindomain, "/popout/recharge"),
-                                "_blank"
-                              );
+                          B.a.isInNimoApp ? Object(Ne.z)() : null;
+                      // window.open(
+                      //     "//".concat(U.a.maindomain, "/popout/recharge"),
+                      //     "_blank"
+                      //   );
                       else if (o === Ct.a.kMRC_OVERFREQUENCY || -7 === o) {
                         var h;
                         G.a.error(
@@ -25543,12 +25543,13 @@
                               localStorage.getItem("pqt_amount") || 0;
                             if (
                               betting != "null" &&
+                              betting != null &&
                               amount < betting.iBetGems
                             ) {
                               _.bcode = 1410;
                               _.bFirstLackGold = true;
                               _.iCode = 1410;
-                            } else if (betting != "null") {
+                            } else if (betting != "null" && betting != null) {
                               // const found = _.vBetInfos.value.find(fvbi => fvbi.iBoxID == betting.iBoxID);
                               // if (found == null)
                               _.vBetInfos.value.push({
@@ -25618,6 +25619,7 @@
                               }
                             }
                             localStorage.setItem("pqt_BetBoxLottery", null);
+                            console.log("done boxLotteryBet", +new Date());
                           }
                           // console.log(
                           //   "receive::decodeTaf",
@@ -25832,6 +25834,7 @@
                           iBetGems: n.iBetGems,
                         })
                       );
+                      console.log("set boxLotteryBet", +new Date());
                     }
                     try {
                       var a = new u.Wup();
@@ -51886,78 +51889,74 @@
                 value: function (t, e) {
                   var n = this,
                     r = this.transformData(t, e);
-                  return (
-                    (r = (function (t, e) {
-                      var n,
-                        r,
-                        i,
-                        o,
-                        a,
-                        s,
-                        c,
-                        u,
-                        l,
-                        f,
-                        h,
-                        d,
-                        p,
-                        v =
-                          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-                      (n = r = i = ""), (o = a = 0);
-                      var m = (function (t) {
-                        for (var e = [], n = 0; n < t.length; n++) {
-                          var r = t.charCodeAt(n);
-                          r < 128
-                            ? e.push(r)
-                            : r < 2048
-                            ? e.push(192 | (r >> 6), 128 | (63 & r))
-                            : r < 55296 || r >= 57344
-                            ? e.push(
-                                224 | (r >> 12),
-                                128 | ((r >> 6) & 63),
-                                128 | (63 & r)
-                              )
-                            : (n++,
-                              (r =
-                                65536 +
-                                (((1023 & r) << 10) |
-                                  (1023 & t.charCodeAt(n)))),
-                              e.push(
-                                240 | (r >> 18),
-                                128 | ((r >> 12) & 63),
-                                128 | ((r >> 6) & 63),
-                                128 | (63 & r)
-                              ));
-                        }
-                        return e;
-                      })(t);
-                      for (o = m.length - 1, s = 0; o >= 0; o--)
-                        (r = m[o] ^ e.charCodeAt(s) ^ a),
-                          (n += String.fromCharCode(r)),
-                          (s = ++s % e.length),
-                          (a = r);
-                      for (o = 0; o < n.length; )
-                        (f = (c = n.charCodeAt(o++)) >> 2),
-                          (h = ((3 & c) << 4) | ((u = n.charCodeAt(o++)) >> 4)),
-                          (d =
-                            ((15 & u) << 2) | ((l = n.charCodeAt(o++)) >> 6)),
-                          (p = 63 & l),
-                          isNaN(u) ? (d = p = 64) : isNaN(l) && (p = 64),
-                          (i =
-                            i +
-                            v.charAt(f) +
-                            v.charAt(h) +
-                            v.charAt(d) +
-                            v.charAt(p));
-                      return i;
-                    })(JSON.stringify(r), String(e)))
-                    // ,fetch("".concat(this.host, "?ts=").concat(e), {
-                    //   method: "POST",
-                    //   body: r,
-                    // }).catch(function (t) {
-                    //   n.logger.error("fail to fetch", t);
-                    // })
-                  );
+                  return (r = (function (t, e) {
+                    var n,
+                      r,
+                      i,
+                      o,
+                      a,
+                      s,
+                      c,
+                      u,
+                      l,
+                      f,
+                      h,
+                      d,
+                      p,
+                      v =
+                        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+                    (n = r = i = ""), (o = a = 0);
+                    var m = (function (t) {
+                      for (var e = [], n = 0; n < t.length; n++) {
+                        var r = t.charCodeAt(n);
+                        r < 128
+                          ? e.push(r)
+                          : r < 2048
+                          ? e.push(192 | (r >> 6), 128 | (63 & r))
+                          : r < 55296 || r >= 57344
+                          ? e.push(
+                              224 | (r >> 12),
+                              128 | ((r >> 6) & 63),
+                              128 | (63 & r)
+                            )
+                          : (n++,
+                            (r =
+                              65536 +
+                              (((1023 & r) << 10) | (1023 & t.charCodeAt(n)))),
+                            e.push(
+                              240 | (r >> 18),
+                              128 | ((r >> 12) & 63),
+                              128 | ((r >> 6) & 63),
+                              128 | (63 & r)
+                            ));
+                      }
+                      return e;
+                    })(t);
+                    for (o = m.length - 1, s = 0; o >= 0; o--)
+                      (r = m[o] ^ e.charCodeAt(s) ^ a),
+                        (n += String.fromCharCode(r)),
+                        (s = ++s % e.length),
+                        (a = r);
+                    for (o = 0; o < n.length; )
+                      (f = (c = n.charCodeAt(o++)) >> 2),
+                        (h = ((3 & c) << 4) | ((u = n.charCodeAt(o++)) >> 4)),
+                        (d = ((15 & u) << 2) | ((l = n.charCodeAt(o++)) >> 6)),
+                        (p = 63 & l),
+                        isNaN(u) ? (d = p = 64) : isNaN(l) && (p = 64),
+                        (i =
+                          i +
+                          v.charAt(f) +
+                          v.charAt(h) +
+                          v.charAt(d) +
+                          v.charAt(p));
+                    return i;
+                  })(JSON.stringify(r), String(e)));
+                  // ,fetch("".concat(this.host, "?ts=").concat(e), {
+                  //   method: "POST",
+                  //   body: r,
+                  // }).catch(function (t) {
+                  //   n.logger.error("fail to fetch", t);
+                  // })
                 },
               },
               {
