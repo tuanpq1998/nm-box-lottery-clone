@@ -1,3 +1,9 @@
+const PQT_BIZTOKEN =
+  "AQCiaQLEOtXcBLs3GDfeIsuZ7vTfE5OZkzEaTBtUEaiP5ef5vhMaMmKutiY1nuOu4dffry2WRU9NQNTLJfDw9ISQlB-zDtNH4YLpajcb_zRp7YJVrELIU8NujXF2uTONvoyHl0fHnvJpFxeBwqbS7wLLGxbbOvUMdHd2bDVioIsYVrXKtyw9AW7abqOA6sJ8s8T3BvnFyvYpmlgGw9g4r4kf0_mxFHgmWgsB-gwOnaTuYWVRE7-7KbcJsWL_imPm6hBkUvsvA7BgVFXP_xPyHmbC3cLZ2s8tu37BNcY98HCB6fvwTTYpGMyGOgXq8ExZ-t_Iw6kgP9nkFz1g_pb9W5Zf";
+const PQT_UID = "1599514227530";
+const PQT_GUID = "0aa89b1d11518666420116661766144b";
+const PQT_COOKIE =
+  "_yasids=__rootsid%3DCACE513249000001324C20E0B51B1459; udb_uid=1701383516586; udb_origin=99; udb_biztoken=AQCt6vduK2HechUysKr_QDgy24y6amklfJHEb9f302j41mu6aH_dPJMIGAIXZAN0xWfkFLNZjOuEVIUrAqjmN-4_Seyd9g0wNDul4yj03F5nDQfvqIZdQ19x7Fn55R9EThDh4r8E5VVby-O7t5H8M7sDO-K4IA-2SHUhQsefsLbmV4CvzxbG8IuXE450GCE2JEeTaQQA1qSv5bt2s8DSX55Jpah8IQxTmUe3_iuKFokhCx_I9lwDGT87wFL5wEki160-93eflA-qtnzv8JzOkKX2PqEX_cxa6OJrOyCUiEJIg9VO7c9uzArXR0ZMMt4vfMiJn_Xn9FOSIBi-jiN8LmkH; theme=2; avatarUrl=https://server-avatar.nimostatic.tv/201907181563444529797_1599514227530_avatar.png; yyuid=1701383516586; __yamid_new=CACE512F410000018355122078F039C0; userName=thuoanh21; udb_version=2.1; udb_status=1; guid=0aa89b1d11518666420116661766144b; ya_login_mode=PhoneNum; udb_deviceid=w_861269327115153408; bizToken=AQCiaQLEOtXcBLs3GDfeIsuZ7vTfE5OZkzEaTBtUEaiP5ef5vhMaMmKutiY1nuOu4dffry2WRU9NQNTLJfDw9ISQlB-zDtNH4YLpajcb_zRp7YJVrELIU8NujXF2uTONvoyHl0fHnvJpFxeBwqbS7wLLGxbbOvUMdHd2bDVioIsYVrXKtyw9AW7abqOA6sJ8s8T3BvnFyvYpmlgGw9g4r4kf0_mxFHgmWgsB-gwOnaTuYWVRE7-7KbcJsWL_imPm6hBkUvsvA7BgVFXP_xPyHmbC3cLZ2s8tu37BNcY98HCB6fvwTTYpGMyGOgXq8ExZ-t_Iw6kgP9nkFz1g_pb9W5Zf; huya_ua=webh5&0.0.1&nimo; udbUserId=1599514227530; _ga=GA1.1.542515056.1720078609; ya_popup_login_from=; __yasmid=0.9063428155361788; ccountry=VN; forterToken=4891256436c646eabc796ce100c9d7ca_1720078621712___21ck; ya_eid=undefined; udb_guiddata=7c87bdab2645462ebcad1eec84e0eefc; lang=1033; isAnchor=0; version=2.1; country=VN; _ga_Q9F868YX7R=GS1.1.1720078609.1.1.1720078621.48.0.0; userid=246362121; udb_cred=ClAVmYfAH/Zug+3PZWunWSqhIjgl/Gjj5si4YdIBIttHDVZxbNSHQOl4aJSTMW1EKmV+eI5rJar0MsTcDhicGP4x6VcKiTfMuBOTA6B8aMJa9g==; __yaoldyyuid=1701383516586; clang=1066; huya_ua=webh5&0.0.1&nimo";
 (window.webpackJsonp = window.webpackJsonp || []).push([
   ["bfe5f", "3e6ca", "7ffdd"],
   {
@@ -11700,10 +11706,8 @@
                     var r = new p.WSConnectParaInfo();
                     (r.lUid = c.uid),
                       (r.sGuid = c.guid || ""),
-                      (r.sToken =
-                        "AQBZ3y9iN90cFxuMX19H80kSHSbgoTDXgdQpj0OWv9oH9szC8NHd97eLQEOE5ar8AZ2XK5fX0bco9HPePy_t42LPXWuSFy2QWuZ_lr8AH1vJIMH6ETlOoNsYLaxWuXUUwVNR8sWCANTcCGa8Hpq_Fio_QNlEST_x9Kxr8RBRBT6sNg1JhsEVKjIyYQjKiGSZZal9_46FmHWuAUySz_N5kHbcy_pnjzxfGs5Tmbdf6o2v5Mz8J5Ey8IWyex_-k-Ib0AULT0UgmhMWm1CWgFxWEDCwUJdJdXl3MtukhFeVoEGJ4_mBb-YKKRkbEhUyyUwyo5xfMsIUqdqtwpEi-KsII6b6"),
-                      (r.sCookie =
-                        "huya_ua=webh5&0.0.1&nimo; huya_ua=webh5&0.0.1&nimo; country=VN; __yamid_new=CA6945EBB7100001F32B1384263F10FB; udb_deviceid=w_747503914563325952; huya_ua=webh5&0.0.1&nimo; _ga_7W5JQJNV5J=GS1.1.1697635440.28.1.1697635473.0.0.0; _ga=GA1.1.1713370784.1692954817; _ga_R88F84SHW9=GS1.1.1697768288.164.0.1697768288.60.0.0; sdidshorttest=test; _ga_Q9F868YX7R=GS1.1.1702718999.320.1.1702719164.60.0.0; guid=0ad765ea2ec089657001c02ec12ebf81; theme=2; ccountry=VN; clang=1066; lang=1066; udb_guiddata=dedc94e6d6b24bfba5492507ecf700a1; userName=Tr%E1%BA%A7n%20Xu%C3%A2n%20C%C3%B4ng; avatarUrl=https://server-avatar.nimostatic.tv/1599516255235/202404151713185285748_1599516255235_avatar.png; udb_uid=1599516255235; version=2.1; bizToken=AQBZ3y9iN90cFxuMX19H80kSHSbgoTDXgdQpj0OWv9oH9szC8NHd97eLQEOE5ar8AZ2XK5fX0bco9HPePy_t42LPXWuSFy2QWuZ_lr8AH1vJIMH6ETlOoNsYLaxWuXUUwVNR8sWCANTcCGa8Hpq_Fio_QNlEST_x9Kxr8RBRBT6sNg1JhsEVKjIyYQjKiGSZZal9_46FmHWuAUySz_N5kHbcy_pnjzxfGs5Tmbdf6o2v5Mz8J5Ey8IWyex_-k-Ib0AULT0UgmhMWm1CWgFxWEDCwUJdJdXl3MtukhFeVoEGJ4_mBb-YKKRkbEhUyyUwyo5xfMsIUqdqtwpEi-KsII6b6; userid=73511194; udbUserId=1599516255235; isAnchor=1; forterToken=79eefb7875e04a939091a301979cc3c8_1718798010665_40_UAS9_21ck; __yasmid=0.9580330651053979; _yasids=__rootsid%3DCAC98F9045D00001F1481A757B101077; sdid=0UnHUgv0_qmfD4KAKlwzhqaQoJlAVZg2GTLRYc3hf6Rl8Q_6Zp0CPfyWS8SJuaYQZwsfNe-8I7pV-Ohj5JtcemVsOwE65E-ug_04p31-cXM7WVkn9LtfFJw_Qo4kgKr8OZHDqNnuwg612sGyflFn1djDlxo_fb9LBWpW4TmMFIXwGZxN1OnjR8AROj8lm6bhr; sdidtest=0UnHUgv0_qmfD4KAKlwzhqaQoJlAVZg2GTLRYc3hf6Rl8Q_6Zp0CPfyWS8SJuaYQZwsfNe-8I7pV-Ohj5JtcemVsOwE65E-ug_04p31-cXM7WVkn9LtfFJw_Qo4kgKr8OZHDqNnuwg612sGyflFn1djDlxo_fb9LBWpW4TmMFIXwGZxN1OnjR8AROj8lm6bhr"),
+                      (r.sToken = PQT_BIZTOKEN),
+                      (r.sCookie = PQT_COOKIE),
                       (r.sUA = c.ua),
                       (r.sAppSrc = c.appSrc),
                       e &&
@@ -11872,10 +11876,10 @@
                 N.log("初始化", n),
                 (c.ISDEBUG = n.isDebug || 0),
                 (c.appSrc = n.appSrc || ""),
-                (c.uid = 1599516255235),
-                (n.uid = 1599516255235), //n.uid || 0,
-                (c.guid = "0ad765ea2ec089657001c02ec12ebf81"),
-                (n.guid = "0ad765ea2ec089657001c02ec12ebf81"), //n.guid || P.getCookie("guid"),
+                (c.uid = PQT_UID),
+                (n.uid = PQT_UID), //n.uid || 0,
+                (c.guid = PQT_GUID),
+                (n.guid = PQT_GUID), //n.guid || P.getCookie("guid"),
                 (c.ua = n.ua || ""),
                 (c.config = n),
                 c.setEnableTrace(),
@@ -17406,10 +17410,9 @@
           r = n.user;
         r.sGuid || f || (r.sGuid = Object(s.i)());
         var i = l(l({}, r), e || {});
-        (t.lUid = 1599516255235),
-          (i.uid = 1599516255235),
-          (t.sToken = i.token =
-            "AQBZ3y9iN90cFxuMX19H80kSHSbgoTDXgdQpj0OWv9oH9szC8NHd97eLQEOE5ar8AZ2XK5fX0bco9HPePy_t42LPXWuSFy2QWuZ_lr8AH1vJIMH6ETlOoNsYLaxWuXUUwVNR8sWCANTcCGa8Hpq_Fio_QNlEST_x9Kxr8RBRBT6sNg1JhsEVKjIyYQjKiGSZZal9_46FmHWuAUySz_N5kHbcy_pnjzxfGs5Tmbdf6o2v5Mz8J5Ey8IWyex_-k-Ib0AULT0UgmhMWm1CWgFxWEDCwUJdJdXl3MtukhFeVoEGJ4_mBb-YKKRkbEhUyyUwyo5xfMsIUqdqtwpEi-KsII6b6"),
+        (t.lUid = PQT_UID),
+          (i.uid = PQT_UID),
+          (t.sToken = i.token = PQT_BIZTOKEN),
           (t.sUDBVer = i.version),
           (t.iRegOrigin = i.regOrigin),
           (t.sUA = i.sUA),
@@ -29680,78 +29683,74 @@
                 value: function (t, e) {
                   var n = this,
                     r = this.transformData(t, e);
-                  return (
-                    (r = (function (t, e) {
-                      var n,
-                        r,
-                        i,
-                        o,
-                        a,
-                        s,
-                        c,
-                        u,
-                        l,
-                        f,
-                        h,
-                        p,
-                        d,
-                        v =
-                          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-                      (n = r = i = ""), (o = a = 0);
-                      var _ = (function (t) {
-                        for (var e = [], n = 0; n < t.length; n++) {
-                          var r = t.charCodeAt(n);
-                          r < 128
-                            ? e.push(r)
-                            : r < 2048
-                            ? e.push(192 | (r >> 6), 128 | (63 & r))
-                            : r < 55296 || r >= 57344
-                            ? e.push(
-                                224 | (r >> 12),
-                                128 | ((r >> 6) & 63),
-                                128 | (63 & r)
-                              )
-                            : (n++,
-                              (r =
-                                65536 +
-                                (((1023 & r) << 10) |
-                                  (1023 & t.charCodeAt(n)))),
-                              e.push(
-                                240 | (r >> 18),
-                                128 | ((r >> 12) & 63),
-                                128 | ((r >> 6) & 63),
-                                128 | (63 & r)
-                              ));
-                        }
-                        return e;
-                      })(t);
-                      for (o = _.length - 1, s = 0; o >= 0; o--)
-                        (r = _[o] ^ e.charCodeAt(s) ^ a),
-                          (n += String.fromCharCode(r)),
-                          (s = ++s % e.length),
-                          (a = r);
-                      for (o = 0; o < n.length; )
-                        (f = (c = n.charCodeAt(o++)) >> 2),
-                          (h = ((3 & c) << 4) | ((u = n.charCodeAt(o++)) >> 4)),
-                          (p =
-                            ((15 & u) << 2) | ((l = n.charCodeAt(o++)) >> 6)),
-                          (d = 63 & l),
-                          isNaN(u) ? (p = d = 64) : isNaN(l) && (d = 64),
-                          (i =
-                            i +
-                            v.charAt(f) +
-                            v.charAt(h) +
-                            v.charAt(p) +
-                            v.charAt(d));
-                      return i;
-                    })(JSON.stringify(r), String(e)))
-                   // , fetch("".concat(this.host, "?ts=").concat(e), {
-                   //    method: "POST",
-                   //    body: r,
-                   //  }).catch(function (t) {
-                   //    n.logger.error("fail to fetch", t);
-                   //  })
-                  );
+                  return (r = (function (t, e) {
+                    var n,
+                      r,
+                      i,
+                      o,
+                      a,
+                      s,
+                      c,
+                      u,
+                      l,
+                      f,
+                      h,
+                      p,
+                      d,
+                      v =
+                        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+                    (n = r = i = ""), (o = a = 0);
+                    var _ = (function (t) {
+                      for (var e = [], n = 0; n < t.length; n++) {
+                        var r = t.charCodeAt(n);
+                        r < 128
+                          ? e.push(r)
+                          : r < 2048
+                          ? e.push(192 | (r >> 6), 128 | (63 & r))
+                          : r < 55296 || r >= 57344
+                          ? e.push(
+                              224 | (r >> 12),
+                              128 | ((r >> 6) & 63),
+                              128 | (63 & r)
+                            )
+                          : (n++,
+                            (r =
+                              65536 +
+                              (((1023 & r) << 10) | (1023 & t.charCodeAt(n)))),
+                            e.push(
+                              240 | (r >> 18),
+                              128 | ((r >> 12) & 63),
+                              128 | ((r >> 6) & 63),
+                              128 | (63 & r)
+                            ));
+                      }
+                      return e;
+                    })(t);
+                    for (o = _.length - 1, s = 0; o >= 0; o--)
+                      (r = _[o] ^ e.charCodeAt(s) ^ a),
+                        (n += String.fromCharCode(r)),
+                        (s = ++s % e.length),
+                        (a = r);
+                    for (o = 0; o < n.length; )
+                      (f = (c = n.charCodeAt(o++)) >> 2),
+                        (h = ((3 & c) << 4) | ((u = n.charCodeAt(o++)) >> 4)),
+                        (p = ((15 & u) << 2) | ((l = n.charCodeAt(o++)) >> 6)),
+                        (d = 63 & l),
+                        isNaN(u) ? (p = d = 64) : isNaN(l) && (d = 64),
+                        (i =
+                          i +
+                          v.charAt(f) +
+                          v.charAt(h) +
+                          v.charAt(p) +
+                          v.charAt(d));
+                    return i;
+                  })(JSON.stringify(r), String(e)));
+                  // , fetch("".concat(this.host, "?ts=").concat(e), {
+                  //    method: "POST",
+                  //    body: r,
+                  //  }).catch(function (t) {
+                  //    n.logger.error("fail to fetch", t);
+                  //  })
                 },
               },
               {

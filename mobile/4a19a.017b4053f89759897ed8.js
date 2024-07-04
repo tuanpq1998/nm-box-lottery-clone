@@ -1,3 +1,9 @@
+const PQT_BIZTOKEN =
+  "AQCiaQLEOtXcBLs3GDfeIsuZ7vTfE5OZkzEaTBtUEaiP5ef5vhMaMmKutiY1nuOu4dffry2WRU9NQNTLJfDw9ISQlB-zDtNH4YLpajcb_zRp7YJVrELIU8NujXF2uTONvoyHl0fHnvJpFxeBwqbS7wLLGxbbOvUMdHd2bDVioIsYVrXKtyw9AW7abqOA6sJ8s8T3BvnFyvYpmlgGw9g4r4kf0_mxFHgmWgsB-gwOnaTuYWVRE7-7KbcJsWL_imPm6hBkUvsvA7BgVFXP_xPyHmbC3cLZ2s8tu37BNcY98HCB6fvwTTYpGMyGOgXq8ExZ-t_Iw6kgP9nkFz1g_pb9W5Zf";
+const PQT_UID = "1599514227530";
+const PQT_GUID = "0aa89b1d11518666420116661766144b";
+const PQT_COOKIE =
+  "_yasids=__rootsid%3DCACE513249000001324C20E0B51B1459; udb_uid=1701383516586; udb_origin=99; udb_biztoken=AQCt6vduK2HechUysKr_QDgy24y6amklfJHEb9f302j41mu6aH_dPJMIGAIXZAN0xWfkFLNZjOuEVIUrAqjmN-4_Seyd9g0wNDul4yj03F5nDQfvqIZdQ19x7Fn55R9EThDh4r8E5VVby-O7t5H8M7sDO-K4IA-2SHUhQsefsLbmV4CvzxbG8IuXE450GCE2JEeTaQQA1qSv5bt2s8DSX55Jpah8IQxTmUe3_iuKFokhCx_I9lwDGT87wFL5wEki160-93eflA-qtnzv8JzOkKX2PqEX_cxa6OJrOyCUiEJIg9VO7c9uzArXR0ZMMt4vfMiJn_Xn9FOSIBi-jiN8LmkH; theme=2; avatarUrl=https://server-avatar.nimostatic.tv/201907181563444529797_1599514227530_avatar.png; yyuid=1701383516586; __yamid_new=CACE512F410000018355122078F039C0; userName=thuoanh21; udb_version=2.1; udb_status=1; guid=0aa89b1d11518666420116661766144b; ya_login_mode=PhoneNum; udb_deviceid=w_861269327115153408; bizToken=AQCiaQLEOtXcBLs3GDfeIsuZ7vTfE5OZkzEaTBtUEaiP5ef5vhMaMmKutiY1nuOu4dffry2WRU9NQNTLJfDw9ISQlB-zDtNH4YLpajcb_zRp7YJVrELIU8NujXF2uTONvoyHl0fHnvJpFxeBwqbS7wLLGxbbOvUMdHd2bDVioIsYVrXKtyw9AW7abqOA6sJ8s8T3BvnFyvYpmlgGw9g4r4kf0_mxFHgmWgsB-gwOnaTuYWVRE7-7KbcJsWL_imPm6hBkUvsvA7BgVFXP_xPyHmbC3cLZ2s8tu37BNcY98HCB6fvwTTYpGMyGOgXq8ExZ-t_Iw6kgP9nkFz1g_pb9W5Zf; huya_ua=webh5&0.0.1&nimo; udbUserId=1599514227530; _ga=GA1.1.542515056.1720078609; ya_popup_login_from=; __yasmid=0.9063428155361788; ccountry=VN; forterToken=4891256436c646eabc796ce100c9d7ca_1720078621712___21ck; ya_eid=undefined; udb_guiddata=7c87bdab2645462ebcad1eec84e0eefc; lang=1033; isAnchor=0; version=2.1; country=VN; _ga_Q9F868YX7R=GS1.1.1720078609.1.1.1720078621.48.0.0; userid=246362121; udb_cred=ClAVmYfAH/Zug+3PZWunWSqhIjgl/Gjj5si4YdIBIttHDVZxbNSHQOl4aJSTMW1EKmV+eI5rJar0MsTcDhicGP4x6VcKiTfMuBOTA6B8aMJa9g==; __yaoldyyuid=1701383516586; clang=1066; huya_ua=webh5&0.0.1&nimo";
 (window.webpackJsonp = window.webpackJsonp || []).push([
   ["4a19a", "032a1", "f5918"],
   {
@@ -21164,10 +21170,9 @@
                       })
                     : W.a
                         .fetchBonus({
-                          udbUserId: 1599516255235, //e.udbUserId,
+                          udbUserId: PQT_UID, //e.udbUserId,
                           version: t.version,
-                          bizToken:
-                            "AQBZ3y9iN90cFxuMX19H80kSHSbgoTDXgdQpj0OWv9oH9szC8NHd97eLQEOE5ar8AZ2XK5fX0bco9HPePy_t42LPXWuSFy2QWuZ_lr8AH1vJIMH6ETlOoNsYLaxWuXUUwVNR8sWCANTcCGa8Hpq_Fio_QNlEST_x9Kxr8RBRBT6sNg1JhsEVKjIyYQjKiGSZZal9_46FmHWuAUySz_N5kHbcy_pnjzxfGs5Tmbdf6o2v5Mz8J5Ey8IWyex_-k-Ib0AULT0UgmhMWm1CWgFxWEDCwUJdJdXl3MtukhFeVoEGJ4_mBb-YKKRkbEhUyyUwyo5xfMsIUqdqtwpEi-KsII6b6", //e.bizToken,
+                          bizToken: PQT_BIZTOKEN, //e.bizToken,
                           udbDeviceType: "WEB",
                           countryCode: t.country,
                           businessId: n._businessId,
@@ -21833,13 +21838,11 @@
                             ? void 0
                             : o.balanceNotEnough
                         ),
-                          j.a.isInNimoApp
-                            ? Object(Me.F)()
-                            : null;
-				// window.open(
-    //                             "//".concat(A.a.maindomain, "/popout/recharge"),
-    //                             "_blank"
-    //                           );
+                          j.a.isInNimoApp ? Object(Me.F)() : null;
+                      // window.open(
+                      //                             "//".concat(A.a.maindomain, "/popout/recharge"),
+                      //                             "_blank"
+                      //                           );
                       else if (i === Ie.a.kMRC_OVERFREQUENCY || -7 === i) {
                         var d;
                         V.a.error(
@@ -32003,7 +32006,7 @@
                   // return this.fetch(t, r);
                   return new Promise((resolve) =>
                     resolve(
-                      `{"id":null,"udbUserId":1599516255235,"betBonus":0.0,"useableBalance":0.0,"businessId":1002,"createTime":null,"updateTime":null,"round":null}`
+                      `{"id":null,"udbUserId":${PQT_UID},"betBonus":0.0,"useableBalance":0.0,"businessId":1002,"createTime":null,"updateTime":null,"round":null}`
                     )
                   );
                 },
